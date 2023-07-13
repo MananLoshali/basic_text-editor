@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Text Editor</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://kit.fontawesome.com/35615bb673.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>TEXT EDITOR</h1>
+    </div>
+    <div class="outer">
+      <div class="container">
+        <div class="tools">
+          <div class="box">
+            <input
+              type="number"
+              min="10"
+              max="150"
+              value="14"
+              class="tool input"
+              id="size"
+            />
+          </div>
+
+          <div class="box">
+            <span class="tool" id="bold"
+              ><i class="fa-solid fa-bold fa-xl"></i
+            ></span>
+          </div>
+
+          <div class="box">
+            <span class="tool" id="italic"
+              ><i class="fa-solid fa-italic fa-xl"></i
+            ></span>
+          </div>
+          <div class="box">
+            <span class="tool" id="underline"
+              ><i class="fa-solid fa-underline fa-xl"></i
+            ></span>
+          </div>
+          <div class="box">
+            <span class="tool" id="center"
+              ><i class="fa-solid fa-align-center fa-xl"></i
+            ></span>
+          </div>
+          <div class="box">
+            <span class="tool" id="right"
+              ><i class="fa-solid fa-align-right fa-xl"></i
+            ></span>
+          </div>
+          <div class="box">
+            <span class="tool" id="left"
+              ><i class="fa-solid fa-align-left fa-xl"></i
+            ></span>
+          </div>
+          <div class="box">
+            <span class="tool" id="capital"
+              ><i class="fa-solid fa-font fa-xl"></i
+            ></span>
+          </div>
+          <div class="box">
+            <span class="tool" id="remove"
+              ><i class="fa-solid fa-text-slash fa-xl"></i
+            ></span>
+          </div>
+          <div class="boxm">
+            <input type="color" class="tool" id="color" />
+          </div>
+          <div class="box">
+            <input
+              type="number"
+              min="1"
+              max="50"
+              value="1"
+              class="tool input"
+              id="letter_spacing"
+            />
+          </div>
+          <div class="box1">
+            <select id="select" class="tool1"></select>
+          </div>
+          <div class="box">
+            <input
+              type="number"
+              min="14"
+              max="250"
+              value="14"
+              class="tool input"
+              id="line_height"
+            />
+          </div>
+        </div>
+        <div class="text_area">
+          <textarea
+            id="text"
+            class="text_class"
+            placeholder="type text here"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

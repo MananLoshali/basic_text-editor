@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.outer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: dodgerblue;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  font-weight: 400;
+  outline: none;
+  border: none;
+  background-color: aliceblue;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  font-size: xx-large;
+}
+
+.tools {
+  width: 955px;
+  height: min-content;
+  border: 1px solid rgb(232, 182, 182);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  row-gap: 5px;
+}
+
+.box {
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border-right: 2px solid gray;
+}
+
+.boxm {
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border-right: 2px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  border: 1px solid mediumspringgreen;
+  margin-left: 3px;
+}
+
+.tool,
+.tool1 {
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool:hover {
+  background-color: gray;
+}
+
+.text_area {
+  width: 100%;
+  height: 350px;
+  border: 1px solid blue;
+}
+
+.text_class {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  resize: none;
+  border: 1px solid blue;
+  transition: all 0.4s;
+  font-weight: normal;
+}
+
+.text_class:focus {
+  outline: none;
+}
+
+.box1 {
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
+}
+
+select {
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 15px;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 40px;
+  height: 28px;
+  border: none;
+  cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 15px;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+}
+input[type="color"]::-moz-color-swatch {
+  border-radius: 15px;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+}
